@@ -112,9 +112,9 @@ Developed with ❤️ by [Mohammed TATI](https://github.com/tatimohammed)
 
 ---
 
-## 📜 License
+## 📜 Licence
 
-Licensed under the [Apache-2.0 License](https://github.com/GittyX-AI/gittyx-ai/blob/main/LICENSE)
+Licenced under the [Apache-2.0 License](https://github.com/GittyX-AI/gittyx-ai/blob/main/LICENCE)
 
 ---
 
