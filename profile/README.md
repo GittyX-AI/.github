@@ -7,27 +7,27 @@ GittyX is an open-source CLI tool that uses AI to analyze your Git repository’
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-### 🧠 AI-Powered Code Analysis
+### AI-Powered Code Analysis
 Analyze commits, generate semantic summaries, and ask natural language questions about your repo:
 - “When did we switch to GraphQL?”
 - “Why was Redis removed?”
 
-### 🧰 CLI Tool + 🌐 Web Dashboard
+### CLI Tool + Web Dashboard
 - Analyze Git repositories using the CLI
 - Launch an interactive dashboard at `http://localhost:3000`
 - Commit timeline, semantic summaries, Q&A interface
 
-### 🔒 Local-First & Private
-All processing happens locally by default. Your code never leaves your machine.
+### Local-First & Private
+All processing happens locally by if you choose local mode. Your code never leaves your machine.
 
-### 📈 Smart Timeline Analysis
+### Smart Timeline Analysis
 Understand the evolution of major features, architectural decisions, and code components over time.
 
 ---
 
-## 🧑‍💻 Quick Start
+## Quick Start
 
 ```bash
 # Install GittyX globally
@@ -40,12 +40,12 @@ cd your-project
 gittyx analyze
 ```
 
-> 💡 Requires Node.js 18+ and a Git repository  
-> 🔑 For online AI mode, set your `GEMINI_API_KEY` in `.env`  
+> Requires Node.js 18+ and a Git repository  
+> For online AI mode, set your `GEMINI_API_KEY` in `.env`  
 
 ---
 
-## 📦 Install & Configure
+## Install & Configure
 
 1. Install GittyX globally:  
    ```bash
@@ -69,7 +69,7 @@ gittyx analyze
 
 ---
 
-## 🗂️ CLI Options
+## CLI Options
 ```bash
 gittyx analyze
 ```
@@ -87,7 +87,7 @@ Options:
 
 ---
 
-## 🧪 Coming Soon
+## Coming Soon
 
 - ✅ VSCode Extension
 - ✅ GitHub Integration
@@ -106,13 +106,13 @@ We welcome contributions! Check out our [Contribution Guide](https://github.com/
 
 ---
 
-## 👨‍💻 About the Developer
+## About the Developer
 
 Developed with ❤️ by [Mohammed TATI](https://github.com/tatimohammed)
 
 ---
 
-## 📜 License
+## License
 
 Licensed under the [Apache-2.0 License](https://github.com/GittyX-AI/gittyx-ai/blob/main/LICENSE)
 
