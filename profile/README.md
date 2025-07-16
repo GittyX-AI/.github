@@ -1,31 +1,35 @@
-# GittyX
+# GittyX AI
 
-**🔍 Understand your codebase history with AI-powered Git analysis**  
-GittyX is an open-source CLI tool that uses AI to analyze your Git repository’s evolution and launches a local web dashboard for exploring your codebase's journey.
+## Overview
 
-![npm version](https://img.shields.io/npm/v/gittyx-ai) ![license](https://img.shields.io/github/license/GittyX-AI/gittyx-ai) ![stars](https://img.shields.io/github/stars/GittyX-AI/gittyx-ai?style=social)  
+**Name:** `gittyx-ai`
 
----
+**Type:** CLI tool + Local web dashboard
+
+![npm version](https://img.shields.io/npm/v/gittyx-ai) ![license](https://img.shields.io/github/license/GittyX-AI/gittyx-ai) ![stars](https://img.shields.io/github/stars/GittyX-AI/gittyx-ai?style=flat)  
+
+## Description
+
+**`gittyx-ai`** is an AI-powered CLI tool that analyzes a Git repository’s history and launches a local web dashboard to visualize, explore, and query the codebase’s evolution.
+
+- CLI: Analyzes commits, diffs, and generates semantic summaries
+- Web: Dashboard served locally at `http://localhost:49251` with interactive timeline and AI-powered Q&A
+- **Private by design:** All data stays on the developer’s machine when using `local mode`.
 
 ## Key Features
 
 ### AI-Powered Code Analysis
 Analyze commits, generate semantic summaries, and ask natural language questions about your repo:
-- “When did we switch to GraphQL?”
+- “When did we switch from JWT to OAuth?”
 - “Why was Redis removed?”
 
 ### CLI Tool + Web Dashboard
 - Analyze Git repositories using the CLI
-- Launch an interactive dashboard at `http://localhost:3000`
+- Launch an interactive dashboard at `http://localhost:49251`
 - Commit timeline, semantic summaries, Q&A interface
 
-### Local-First & Private
-All processing happens locally by if you choose local mode. Your code never leaves your machine.
-
-### Smart Timeline Analysis
-Understand the evolution of major features, architectural decisions, and code components over time.
-
----
+### Local Mode & Private
+All processing happens locally if you choose `local mode`. Your code never leaves your machine.
 
 ## Quick Start
 
@@ -41,37 +45,18 @@ gittyx analyze
 ```
 
 > Requires Node.js 18+ and a Git repository  
-> For online AI mode, set your `GEMINI_API_KEY` in `.env`  
-
----
-
-## Install & Configure
-
-1. Install GittyX globally:  
-   ```bash
-   npm install -g gittyx-ai
-   ```
-
-2. Verify installation:  
-   ```bash
-   gittyx --version
-   ```
-
-3. Set up `.env` with your Gemini API key (for online mode):  
-   ```bash
-   GEMINI_API_KEY=your_key_here
-   ```
-
-4. Analyze your repo and launch dashboard:  
-   ```bash
-   gittyx analyze
-   ```
-
----
+> For online mode, set your `AI provider` api key:
+> - For Gemini `GEMINI_API_KEY` in `.env` 
+> - For OpenAI `OPENAI_API_KEY` in `.env`
+>
+> For local mode, you will need to:
+> 1. Download and install [Ollama](https://ollama.com/download)
+> 2. Run: `ollama serve`
+> 3. Run: `gittyx analyze --mode local`, write the name of model you want to use, check the list of [available models](https://ollama.com/search)
 
 ## CLI Options
 ```bash
-gittyx analyze
+gittyx analyze -h
 ```
 ```bash
 Usage: gittyx analyze [options] 
@@ -79,43 +64,32 @@ Usage: gittyx analyze [options]
 Analyze repository and start dashboard 
 
 Options: 
--l, --limit <number>  The number of the most recent commits to analyze (default: 200) 
--d, --date <date>     The date to start analyzing commits from (YYYY-MM-DD) 
--m, --mode <string>   GittyX mode: online (gemini or openai) or local (huggingface) (default: "online") 
+-l, --limit <number>  The number of the most recent commits to analyze (default: 200)  
+-m, --mode <string>   GittyX mode: online (gemini or openai) or local (ollama) (default: "online") 
 -h, --help            display help for command
 ```
 
----
-
 ## Coming Soon
 
-- ✅ VSCode Extension
-- ✅ GitHub Integration
-- ✅ Timeline Diff Comparison
-- ✅ Team Dashboards *(online only)*
+| Feature                          | Soon | Future | Future+ |
+|----------------------------------|:----:|:------:|:-------:|
+| VSCode Extension              | x |  |  |
+| GitHub Integration           |  | x |  |
+| Timeline Diff Comparison     |  | x |  |
+| Team Dashboards *(online only)* |  |  | x |
 
----
-
-Join thousands of developers using GittyX to explore and understand their codebase history.
-
----
 
 ## 🤝 Contributing
 
 We welcome contributions! Check out our [Contribution Guide](https://github.com/GittyX-AI/gittyx-ai/blob/main/CONTRIBUTING.md) and help improve GittyX.
 
----
-
 ## About the Developer
 
-Developed with ❤️ by [Mohammed TATI](https://github.com/tatimohammed)
-
----
+Developed by [Mohammed TATI](https://github.com/tatimohammed)
 
 ## License
 
 Licensed under the [Apache-2.0 License](https://github.com/GittyX-AI/gittyx-ai/blob/main/LICENSE)
 
----
 
 > Made for developers, by a developer
