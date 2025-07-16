@@ -8,7 +8,9 @@
 
 **Website:** https://gittyx-ai.com
 
-![npm version](https://img.shields.io/npm/v/gittyx-ai) ![license](https://img.shields.io/github/license/GittyX-AI/gittyx-ai) ![stars](https://img.shields.io/github/stars/GittyX-AI/gittyx-ai?style=flat)  
+![npm version](https://img.shields.io/npm/v/gittyx-ai) ![license](https://img.shields.io/github/license/GittyX-AI/gittyx-ai.svg) ![stars](https://img.shields.io/github/stars/GittyX-AI/gittyx-ai?style=flat) [![GitHub release](https://img.shields.io/github/v/release/GittyX-AI/gittyx-ai?sort=date&display_name=release&color=orange
+)](https://github.com/GittyX-AI/gittyx-ai/releases)
+ 
 
 ## Description
 
@@ -85,13 +87,10 @@ Options:
 
 We welcome contributions! Check out our [Contribution Guide](https://github.com/GittyX-AI/gittyx-ai/blob/main/CONTRIBUTING.md) and help improve GittyX.
 
-## About the Developer
-
-Developed by [Mohammed TATI](https://github.com/tatimohammed)
 
 ## License
 
 Licensed under the [Apache-2.0 License](https://github.com/GittyX-AI/gittyx-ai/blob/main/LICENSE)
 
-
+> Developed by [Mohammed TATI](https://github.com/tatimohammed)\
 > Made for developers, by a developer
