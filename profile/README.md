@@ -22,7 +22,7 @@
 
 ### AI-Powered Code Analysis
 Analyze commits, generate semantic summaries, and ask natural language questions about your repo:
-- “When did we switch from JWT to OAuth?”
+- “When did we migrate from Oracle to SQL Server? and why?”
 - “Why was Redis removed?”
 
 ### CLI Tool + Web Dashboard
